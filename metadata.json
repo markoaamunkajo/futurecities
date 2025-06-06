@@ -1,0 +1,6 @@
+{
+  "name": "Future Cities React",
+  "description": "A retro 80s game web app that generates 3D-style wireframe representations of cityscapes on a virtual computer screen.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
