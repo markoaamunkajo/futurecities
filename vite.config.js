@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: process.env.VITE_BASE_PATH
+  base: process.env.VITE_BASE_PATH, // <--- Add a comma here!
   define: {
     // Vite does not expose process.env directly to the client.
     // This makes process.env.API_KEY available in the client code.
@@ -13,7 +13,7 @@ export default defineConfig({
     'process.env.API_KEY': JSON.stringify(process.env.API_KEY),
   },
   // Optional: If you need to serve from a subdirectory on a static host
-  // base: '/your-subdirectory/', 
+  // base: '/your-subdirectory/',
   server: {
     port: 3000, // You can specify a port for the dev server
     open: true, // Automatically open the app in the browser on server start
